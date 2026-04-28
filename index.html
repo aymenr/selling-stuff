@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Moving Sale</title>
+<meta name="description" content="A few little things looking for new homes — we're moving!" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:wght@400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #faf6ef;
+    --paper: #fffaf2;
+    --ink: #2b2622;
+    --ink-soft: #6a6058;
+    --line: #e6dcca;
+    --terracotta: #b8543a;
+    --terracotta-deep: #963f28;
+    --sold: #a13a3a;
+    --shadow: 0 1px 2px rgba(60,40,20,.04), 0 12px 28px -16px rgba(60,40,20,.18);
+    --shadow-hover: 0 2px 4px rgba(60,40,20,.06), 0 22px 44px -18px rgba(60,40,20,.28);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(184,84,58,.05), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(184,84,58,.04), transparent 50%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' seed='3'/><feColorMatrix values='0 0 0 0 0.6 0 0 0 0 0.45 0 0 0 0 0.3 0 0 0 0.08 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    background-attachment: fixed;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header.hero {
+    text-align: center;
+    padding: 64px 24px 32px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .hero .kicker {
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    color: var(--terracotta);
+    transform: rotate(-2deg);
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .hero h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: clamp(40px, 7vw, 64px);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin: 0 0 16px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--terracotta);
+  }
+  .hero p.lede {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .hero .divider {
+    width: 64px;
+    height: 1px;
+    background: var(--line);
+    margin: 28px auto 0;
+  }
+
+  .filters {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .filter-pill {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all .2s ease;
+  }
+  .filter-pill:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .filter-pill.active {
+    background: var(--terracotta);
+    color: #fff;
+    border-color: var(--terracotta);
+  }
+  .filter-pill .count {
+    font-size: 11px;
+    opacity: .7;
+    margin-left: 2px;
+  }
+
+  main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px 20px 80px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 28px 24px;
+  }
+
+  .card {
+    --tilt: 0deg;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    padding: 14px 14px 18px;
+    position: relative;
+    transform: rotate(var(--tilt));
+    transition: transform .35s ease, box-shadow .35s ease;
+  }
+  .card:nth-child(4n+1) { --tilt: -0.7deg; }
+  .card:nth-child(4n+2) { --tilt: 0.5deg; }
+  .card:nth-child(4n+3) { --tilt: -0.2deg; }
+  .card:nth-child(4n+4) { --tilt: 0.9deg; }
+
+  @media (hover: hover) {
+    .card:hover {
+      transform: rotate(0deg) translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+  }
+
+  .card.sold { opacity: .82; }
+  .card.sold .photo-wrap::after {
+    content: "sold";
+    position: absolute;
+    top: 14px;
+    right: -8px;
+    transform: rotate(8deg);
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+    background: var(--sold);
+    padding: 4px 18px 6px;
+    border-radius: 4px;
+    box-shadow: 0 6px 18px -6px rgba(161,58,58,.5);
+    letter-spacing: 0.02em;
+    pointer-events: none;
+  }
+
+  .photo-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #f0e9da;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+  .photo-wrap img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(var(--rot, 0deg));
+    transition: opacity .25s ease, transform .5s ease;
+  }
+  /* For 90/270 rotations, lay the image out with swapped dimensions
+     (container is 4:3) so it fills correctly after rotation. */
+  .photo-wrap img.r90, .photo-wrap img.r270 {
+    inset: auto;
+    width: 75%;
+    height: 133.333%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(var(--scale, 1));
+  }
+  .photo-wrap.portrait { aspect-ratio: 3 / 4; }
+  .photo-wrap.portrait img.r90, .photo-wrap.portrait img.r270 {
+    width: 133.333%;
+    height: 75%;
+  }
+  .photo-wrap img.hidden { opacity: 0; pointer-events: none; }
+  .photo-notice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #8a7e6b;
+    gap: 6px;
+    cursor: default;
+  }
+  .photo-notice-icon { font-size: 2.2rem; }
+  .photo-notice-text {
+    font-size: .85rem;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  .photo-notice-text small {
+    color: #a89b88;
+    font-weight: 400;
+  }
+
+  @media (hover: hover) {
+    .card:hover .photo-wrap img.active { --scale: 1.025; }
+    .card:hover .photo-wrap img.active:not(.r90):not(.r270) {
+      transform: rotate(var(--rot, 0deg)) scale(1.025);
+    }
+  }
+
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,250,242,.92);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    opacity: 0;
+    transition: opacity .2s ease;
+  }
+  .nav-btn.prev { left: 8px; }
+  .nav-btn.next { right: 8px; }
+  .photo-wrap:hover .nav-btn,
+  .photo-wrap:focus-within .nav-btn { opacity: 1; }
+  @media (hover: none) {
+    .nav-btn { opacity: 1; }
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+  }
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.6);
+    border: 1px solid rgba(0,0,0,.15);
+  }
+  .dot.active { background: #fff; }
+
+  .meta { padding: 14px 4px 0; }
+  .title {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin: 0 0 4px;
+  }
+  .desc {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin: 0 0 12px;
+    min-height: 2.6em;
+  }
+
+  .price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  .price {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--terracotta-deep);
+    transform: rotate(-3deg);
+    display: inline-block;
+    line-height: 1;
+  }
+  .photo-count {
+    font-size: 12px;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+  .btn {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 9px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink);
+    transition: all .2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .btn:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .btn.primary {
+    background: var(--terracotta);
+    color: #fff;
+    border-color: var(--terracotta);
+  }
+  .btn.primary:hover {
+    background: var(--terracotta-deep);
+    border-color: var(--terracotta-deep);
+  }
+  .card.sold .btn { pointer-events: none; opacity: .45; }
+
+  footer {
+    text-align: center;
+    padding: 40px 24px 60px;
+    color: var(--ink-soft);
+    font-size: 14px;
+  }
+  footer .heart {
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: var(--terracotta);
+  }
+
+  /* Lightbox */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(20,15,10,.92);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.6);
+    transform: rotate(var(--rot, 0deg));
+    transition: transform .25s ease;
+  }
+  /* When rotated 90/270, swap viewport-relative max sizes so the
+     post-rotation bounding box still fits the screen. */
+  .lightbox img.r90, .lightbox img.r270 {
+    max-width: calc(100vh - 48px);
+    max-height: calc(100vw - 48px);
+  }
+  .lightbox .close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.12);
+    color: #fff;
+    border: 0;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .lightbox .close:hover { background: rgba(255,255,255,.2); }
+  .lightbox .nav-lb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.12);
+    color: #fff;
+    border: 0;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .lightbox .nav-lb:hover { background: rgba(255,255,255,.2); }
+  .lightbox .nav-lb.prev { left: 18px; }
+  .lightbox .nav-lb.next { right: 18px; }
+  .lightbox .caption {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,.85);
+    font-family: 'Lora', serif;
+    font-size: 16px;
+  }
+
+  /* Edit mode */
+  .edit-toggle {
+    position: fixed;
+    top: 14px;
+    right: 14px;
+    z-index: 50;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    cursor: pointer;
+    opacity: .55;
+    transition: opacity .2s ease, background .2s ease;
+  }
+  .edit-toggle:hover { opacity: 1; }
+  body.edit .edit-toggle {
+    opacity: 1;
+    background: var(--terracotta);
+    color: #fff;
+    border-color: var(--terracotta);
+  }
+
+  .edit-panel {
+    position: fixed;
+    top: 54px;
+    right: 14px;
+    z-index: 50;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 12px;
+    box-shadow: var(--shadow);
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--ink-soft);
+    max-width: 220px;
+  }
+  body.edit .edit-panel { display: flex; }
+  .edit-panel button {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--line);
+    background: var(--cream);
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .edit-panel button:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .edit-panel .hint { font-style: italic; line-height: 1.4; }
+
+  .rotate-btn {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,250,242,.92);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 4;
+    box-shadow: 0 2px 8px rgba(0,0,0,.12);
+  }
+  body.edit .rotate-btn { display: flex; }
+  .rotate-btn:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .rotate-btn.ccw { left: 46px; }
+
+  .lightbox .rotate-lb {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.12);
+    color: #fff;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  body.edit .lightbox .rotate-lb { display: block; }
+  .lightbox .rotate-lb:hover { background: rgba(255,255,255,.2); }
+  .lightbox .rotate-lb.ccw { left: 70px; }
+
+  body.edit [data-field] {
+    outline: 1px dashed rgba(184,84,58,.45);
+    outline-offset: 3px;
+    border-radius: 2px;
+    cursor: text;
+  }
+  body.edit [data-field]:hover { outline-color: rgba(184,84,58,.7); }
+  body.edit [data-field]:focus {
+    outline: 2px solid var(--terracotta);
+    outline-offset: 3px;
+    background: rgba(255,255,255,.6);
+  }
+  body.edit [data-field="title"]:empty::before,
+  body.edit [data-field="price"]:empty::before {
+    content: '…';
+    color: var(--ink-soft);
+  }
+  body.edit [data-field="description"] { white-space: pre-line; }
+
+  .ori-toggle {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    z-index: 4;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: rgba(255,250,242,.92);
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    cursor: pointer;
+    display: none;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 8px rgba(0,0,0,.12);
+  }
+  body.edit .ori-toggle { display: inline-flex; }
+  .ori-toggle:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .ori-toggle.active { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
+
+  @media (max-width: 520px) {
+    .grid { gap: 22px 16px; }
+    .hero { padding: 40px 20px 24px; }
+    .card { padding: 12px 12px 16px; --tilt: 0deg !important; }
+    .card:hover { transform: translateY(-2px); }
+  }
+</style>
+</head>
+<body>
+
+<button class="edit-toggle" id="editToggle" aria-pressed="false">edit</button>
+<div class="edit-panel" id="editPanel">
+  <span class="hint">Click ↻ on photos to rotate, or click the title, description, or price to edit. Changes are saved in your browser; use "Download data.json" to make them permanent.</span>
+  <button id="saveData">Download data.json</button>
+  <button id="resetEdits">Reset all changes</button>
+</div>
+
+<header class="hero">
+  <img src="hero.png" alt="Moving Sale" style="width:30%;border-radius:6px;margin-bottom:0;display:block;margin-left:auto;margin-right:auto;">
+  <h1>Moving Sale</h1>
+  <p class="lede">We're leaving Germany and a few little things are looking for new homes. You can pick them from Torfstr 22</p>
+  <div class="divider"></div>
+</header>
+
+<div class="filters" id="filters"></div>
+
+<main>
+  <div class="grid" id="grid"></div>
+</main>
+
+
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="close" id="lbClose" aria-label="Close">×</button>
+  <button class="rotate-lb ccw" id="lbRotateCCW" aria-label="Rotate left">↺</button>
+  <button class="rotate-lb" id="lbRotateCW" aria-label="Rotate right">↻</button>
+  <button class="nav-lb prev" id="lbPrev" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="" />
+  <button class="nav-lb next" id="lbNext" aria-label="Next">›</button>
+  <div class="caption" id="lbCaption"></div>
+</div>
+
+<script>
+  // All item info & contacts live in data.json — edit that file, no need to touch this script.
+  let CONTACT_EMAIL = ""; // kept for backward compat
+
+  let ITEMS = [];
+  let DATA_RAW = null; // last-loaded data.json shape, for export
+  let DATA_ROTATIONS = {}; // rotations from data.json, keyed by filename
+  const ROT_KEY = "image-rotations";
+  let LOCAL_ROTATIONS = {};
+  try { LOCAL_ROTATIONS = JSON.parse(localStorage.getItem(ROT_KEY) || "{}"); } catch (e) { LOCAL_ROTATIONS = {}; }
+  const EDITS_KEY = "item-edits";
+  let LOCAL_EDITS = {};
+  try { LOCAL_EDITS = JSON.parse(localStorage.getItem(EDITS_KEY) || "{}"); } catch (e) { LOCAL_EDITS = {}; }
+
+  const EDITABLE_FIELDS = ["title", "description", "price", "orientation"];
+
+  function effectiveItem(item) {
+    const e = LOCAL_EDITS[item.id];
+    return e ? { ...item, ...e } : item;
+  }
+  function setEdit(itemId, field, value) {
+    const orig = ITEMS.find(i => i.id === itemId);
+    LOCAL_EDITS[itemId] = LOCAL_EDITS[itemId] || {};
+    if (orig && orig[field] === value) {
+      delete LOCAL_EDITS[itemId][field];
+      if (!Object.keys(LOCAL_EDITS[itemId]).length) delete LOCAL_EDITS[itemId];
+    } else {
+      LOCAL_EDITS[itemId][field] = value;
+    }
+    localStorage.setItem(EDITS_KEY, JSON.stringify(LOCAL_EDITS));
+  }
+
+  const grid = document.getElementById("grid");
+  const filtersEl = document.getElementById("filters");
+  const lb = document.getElementById("lightbox");
+  const lbImg = document.getElementById("lbImg");
+  const lbCaption = document.getElementById("lbCaption");
+
+  let lightboxState = { item: null, index: 0 };
+  let activeFilter = null;
+
+  function renderFilters() {
+    const cats = {};
+    ITEMS.forEach(item => {
+      const c = item.category || "Other";
+      cats[c] = (cats[c] || 0) + 1;
+    });
+    filtersEl.innerHTML = "";
+
+    const allBtn = document.createElement("button");
+    allBtn.className = "filter-pill" + (activeFilter === null ? " active" : "");
+    allBtn.innerHTML = `All <span class="count">${ITEMS.length}</span>`;
+    allBtn.onclick = () => { activeFilter = null; renderFilters(); renderGrid(); };
+    filtersEl.appendChild(allBtn);
+
+    Object.keys(cats).sort().forEach(cat => {
+      const btn = document.createElement("button");
+      btn.className = "filter-pill" + (activeFilter === cat ? " active" : "");
+      btn.innerHTML = `${cat} <span class="count">${cats[cat]}</span>`;
+      btn.onclick = () => { activeFilter = cat; renderFilters(); renderGrid(); };
+      filtersEl.appendChild(btn);
+    });
+  }
+
+  function renderGrid() {
+    grid.innerHTML = "";
+    const filtered = activeFilter
+      ? ITEMS.filter(i => (i.category || "Other") === activeFilter)
+      : ITEMS;
+    filtered.forEach(item => grid.appendChild(renderCard(item)));
+  }
+
+  function imgPath(file) { return "images/" + file; }
+
+  function rotationOf(file) {
+    if (file in LOCAL_ROTATIONS) return LOCAL_ROTATIONS[file];
+    return DATA_ROTATIONS[file] || 0;
+  }
+  function setRotationFor(file, deg) {
+    deg = ((deg % 360) + 360) % 360;
+    const dataDeg = DATA_ROTATIONS[file] || 0;
+    if (deg === dataDeg) delete LOCAL_ROTATIONS[file];
+    else LOCAL_ROTATIONS[file] = deg;
+    localStorage.setItem(ROT_KEY, JSON.stringify(LOCAL_ROTATIONS));
+  }
+  function applyRotationClass(el, deg) {
+    el.classList.remove("r0", "r90", "r180", "r270");
+    el.classList.add("r" + deg);
+    el.style.setProperty("--rot", deg + "deg");
+  }
+  function refreshImgRotation(img) {
+    applyRotationClass(img, rotationOf(img.dataset.file));
+  }
+
+  let CONTACT_WHATSAPP = "";
+  function makeWhatsApp(item) {
+    const text = encodeURIComponent(`Hi! I'd love to grab the "${item.title}" — is it still available?`);
+    const phone = CONTACT_WHATSAPP.replace(/[^0-9]/g, "");
+    return `https://wa.me/${phone}?text=${text}`;
+  }
+
+  function renderCard(item) {
+    const eff = effectiveItem(item);
+    const card = document.createElement("article");
+    card.className = "card" + (item.available ? "" : " sold");
+    card.dataset.itemId = item.id;
+
+    const wrap = document.createElement("div");
+    wrap.className = "photo-wrap";
+    if (!item.images.length) {
+      const notice = document.createElement("div");
+      notice.className = "photo-notice";
+      notice.innerHTML = '<span class="photo-notice-icon">📷</span><span class="photo-notice-text">Photos coming soon<br><small>Available after 1 June 2026</small></span>';
+      wrap.innerHTML = "";
+      wrap.style.display = "flex";
+      wrap.appendChild(notice);
+    }
+
+    item.images.forEach((file, i) => {
+      const img = document.createElement("img");
+      img.src = imgPath(file);
+      img.alt = item.title + (item.images.length > 1 ? ` — photo ${i+1}` : "");
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.className = i === 0 ? "active" : "hidden";
+      img.dataset.file = file;
+      applyRotationClass(img, rotationOf(file));
+      wrap.appendChild(img);
+    });
+
+    const rotCW = document.createElement("button");
+    rotCW.className = "rotate-btn";
+    rotCW.setAttribute("aria-label", "Rotate photo right");
+    rotCW.innerHTML = "↻";
+    rotCW.onclick = (e) => {
+      e.stopPropagation();
+      const file = item.images[idx];
+      setRotationFor(file, rotationOf(file) + 90);
+      refreshAllImagesFor(file);
+    };
+    wrap.appendChild(rotCW);
+
+    const rotCCW = document.createElement("button");
+    rotCCW.className = "rotate-btn ccw";
+    rotCCW.setAttribute("aria-label", "Rotate photo left");
+    rotCCW.innerHTML = "↺";
+    rotCCW.onclick = (e) => {
+      e.stopPropagation();
+      const file = item.images[idx];
+      setRotationFor(file, rotationOf(file) - 90);
+      refreshAllImagesFor(file);
+    };
+    wrap.appendChild(rotCCW);
+
+    const oriToggle = document.createElement("button");
+    oriToggle.className = "ori-toggle" + (eff.orientation === "portrait" ? " active" : "");
+    oriToggle.textContent = eff.orientation === "portrait" ? "◱ portrait" : "◰ landscape";
+    oriToggle.setAttribute("aria-label", "Toggle frame orientation");
+    oriToggle.onclick = (e) => {
+      e.stopPropagation();
+      const cur = effectiveItem(item).orientation || "landscape";
+      const next = cur === "landscape" ? "portrait" : "landscape";
+      setEdit(item.id, "orientation", next);
+      wrap.classList.toggle("portrait", next === "portrait");
+      oriToggle.textContent = next === "portrait" ? "◱ portrait" : "◰ landscape";
+      oriToggle.classList.toggle("active", next === "portrait");
+    };
+    wrap.appendChild(oriToggle);
+
+    if (eff.orientation === "portrait") wrap.classList.add("portrait");
+
+    let idx = 0;
+    function show(n) {
+      const imgs = wrap.querySelectorAll("img");
+      idx = (n + imgs.length) % imgs.length;
+      imgs.forEach((im, i) => {
+        im.classList.toggle("active", i === idx);
+        im.classList.toggle("hidden", i !== idx);
+      });
+      const dots = wrap.querySelectorAll(".dot");
+      dots.forEach((d, i) => d.classList.toggle("active", i === idx));
+    }
+
+    if (item.images.length > 1) {
+      const prev = document.createElement("button");
+      prev.className = "nav-btn prev";
+      prev.setAttribute("aria-label", "Previous photo");
+      prev.innerHTML = "‹";
+      prev.onclick = (e) => { e.stopPropagation(); show(idx - 1); };
+
+      const next = document.createElement("button");
+      next.className = "nav-btn next";
+      next.setAttribute("aria-label", "Next photo");
+      next.innerHTML = "›";
+      next.onclick = (e) => { e.stopPropagation(); show(idx + 1); };
+
+      const dots = document.createElement("div");
+      dots.className = "dots";
+      item.images.forEach((_, i) => {
+        const d = document.createElement("span");
+        d.className = "dot" + (i === 0 ? " active" : "");
+        dots.appendChild(d);
+      });
+
+      wrap.appendChild(prev);
+      wrap.appendChild(next);
+      wrap.appendChild(dots);
+
+      // touch swipe
+      let tx = 0;
+      wrap.addEventListener("touchstart", (e) => { tx = e.touches[0].clientX; }, { passive: true });
+      wrap.addEventListener("touchend", (e) => {
+        const dx = e.changedTouches[0].clientX - tx;
+        if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1));
+      });
+    }
+
+    wrap.addEventListener("click", () => openLightbox(item, idx));
+
+    const meta = document.createElement("div");
+    meta.className = "meta";
+    meta.innerHTML = `
+      <h2 class="title" data-field="title">${escapeHtml(eff.title)}</h2>
+      <p class="desc" data-field="description">${escapeHtml(eff.description)}</p>
+      <div class="price-row">
+        <span class="price" data-field="price">${escapeHtml(eff.price)}</span>
+        ${item.images.length > 1 ? `<span class="photo-count">${item.images.length} photos</span>` : ""}
+      </div>
+      <div class="actions">
+        <a class="btn primary whatsapp-link" href="${makeWhatsApp(eff)}" target="_blank" rel="noopener"><img src="whatsapp.png" alt="" class="whatsapp-icon"> WhatsApp</a>
+      </div>
+    `;
+
+    meta.querySelectorAll("[data-field]").forEach(el => {
+      const field = el.dataset.field;
+      bindEditable(el, item.id, field, () => {
+        const cur = effectiveItem(item);
+        meta.querySelector(".whatsapp-link").href = makeWhatsApp(cur);
+      });
+    });
+
+    card.appendChild(wrap);
+    card.appendChild(meta);
+    refreshEditableState(card);
+    return card;
+  }
+
+  function bindEditable(el, itemId, field, onChange) {
+    el.dataset.itemId = itemId;
+    el.addEventListener("input", () => {
+      setEdit(itemId, field, el.textContent);
+      if (onChange) onChange();
+    });
+    el.addEventListener("paste", (e) => {
+      e.preventDefault();
+      const text = (e.clipboardData || window.clipboardData).getData("text");
+      document.execCommand("insertText", false, text);
+    });
+    if (field !== "description") {
+      el.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") { e.preventDefault(); el.blur(); }
+      });
+    }
+  }
+
+  function refreshEditableState(root) {
+    const on = document.body.classList.contains("edit");
+    (root || document).querySelectorAll("[data-field]").forEach(el => {
+      if (on) el.setAttribute("contenteditable", "true");
+      else el.removeAttribute("contenteditable");
+    });
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    })[c]);
+  }
+
+  // Lightbox
+  function openLightbox(item, startIdx) {
+    lightboxState = { item, index: startIdx || 0 };
+    updateLightbox();
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeLightbox() {
+    lb.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+  function lbStep(n) {
+    const imgs = lightboxState.item.images;
+    lightboxState.index = (lightboxState.index + n + imgs.length) % imgs.length;
+    updateLightbox();
+  }
+  function updateLightbox() {
+    const { item, index } = lightboxState;
+    const eff = effectiveItem(item);
+    const file = item.images[index];
+    lbImg.src = imgPath(file);
+    lbImg.alt = eff.title;
+    lbImg.dataset.file = file;
+    applyRotationClass(lbImg, rotationOf(file));
+    lbCaption.textContent = item.images.length > 1
+      ? `${eff.title} — ${index + 1} of ${item.images.length}`
+      : eff.title;
+  }
+
+  function refreshAllImagesFor(file) {
+    document.querySelectorAll(`img[data-file="${file}"]`).forEach(refreshImgRotation);
+  }
+
+  document.getElementById("lbClose").onclick = closeLightbox;
+  document.getElementById("lbPrev").onclick = (e) => { e.stopPropagation(); lbStep(-1); };
+  document.getElementById("lbNext").onclick = (e) => { e.stopPropagation(); lbStep(1); };
+  document.getElementById("lbRotateCW").onclick = (e) => {
+    e.stopPropagation();
+    const file = lbImg.dataset.file;
+    setRotationFor(file, rotationOf(file) + 90);
+    refreshAllImagesFor(file);
+  };
+  document.getElementById("lbRotateCCW").onclick = (e) => {
+    e.stopPropagation();
+    const file = lbImg.dataset.file;
+    setRotationFor(file, rotationOf(file) - 90);
+    refreshAllImagesFor(file);
+  };
+
+  // Edit mode toggle
+  const editToggle = document.getElementById("editToggle");
+  function setEditMode(on) {
+    document.body.classList.toggle("edit", on);
+    editToggle.setAttribute("aria-pressed", on ? "true" : "false");
+    refreshEditableState();
+    if (on) localStorage.setItem("edit-mode", "1"); else localStorage.removeItem("edit-mode");
+  }
+  editToggle.onclick = () => setEditMode(!document.body.classList.contains("edit"));
+  if (new URLSearchParams(location.search).has("edit") || localStorage.getItem("edit-mode") === "1") {
+    setEditMode(true);
+  }
+
+  document.getElementById("resetEdits").onclick = () => {
+    if (!confirm("Clear all browser-side rotations and text edits? (Anything already saved in data.json will remain.)")) return;
+    LOCAL_ROTATIONS = {};
+    LOCAL_EDITS = {};
+    localStorage.removeItem(ROT_KEY);
+    localStorage.removeItem(EDITS_KEY);
+    document.querySelectorAll(".photo-wrap img[data-file]").forEach(refreshImgRotation);
+    if (lbImg.dataset.file) refreshImgRotation(lbImg);
+    document.querySelectorAll(".card").forEach(card => {
+      const item = ITEMS.find(i => i.id === card.dataset.itemId);
+      if (!item) return;
+      card.querySelectorAll("[data-field]").forEach(el => {
+        el.textContent = item[el.dataset.field] || "";
+      });
+      const wa = card.querySelector(".whatsapp-link");
+      if (wa) wa.href = makeWhatsApp(item);
+      const wrap = card.querySelector(".photo-wrap");
+      if (wrap) wrap.classList.remove("portrait");
+      const oriBtn = card.querySelector(".ori-toggle");
+      if (oriBtn) { oriBtn.textContent = "◰ landscape"; oriBtn.classList.remove("active"); }
+    });
+  };
+
+  document.getElementById("saveData").onclick = () => {
+    if (!DATA_RAW) return;
+    const merged = { ...DATA_ROTATIONS, ...LOCAL_ROTATIONS };
+    Object.keys(merged).forEach(k => { if (!merged[k]) delete merged[k]; });
+    const out = { ...DATA_RAW };
+    if (Object.keys(merged).length) out.rotations = merged;
+    else delete out.rotations;
+    out.items = (DATA_RAW.items || []).map(it => {
+      const e = LOCAL_EDITS[it.id];
+      if (!e) return it;
+      const merged = { ...it };
+      EDITABLE_FIELDS.forEach(f => {
+        if (f in e) {
+          if (f === "orientation" && e[f] === "landscape") delete merged[f];
+          else merged[f] = e[f];
+        }
+      });
+      return merged;
+    });
+    const blob = new Blob([JSON.stringify(out, null, 2) + "\n"], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "data.json";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  };
+  lb.addEventListener("click", (e) => { if (e.target === lb) closeLightbox(); });
+  document.addEventListener("keydown", (e) => {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowLeft") lbStep(-1);
+    if (e.key === "ArrowRight") lbStep(1);
+  });
+
+  // Lightbox swipe
+  let lbTx = 0;
+  lb.addEventListener("touchstart", (e) => { lbTx = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener("touchend", (e) => {
+    const dx = e.changedTouches[0].clientX - lbTx;
+    if (Math.abs(dx) > 40) lbStep(dx < 0 ? 1 : -1);
+  });
+
+  // load data.json then render
+  fetch("data.json", { cache: "no-cache" })
+    .then(r => {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .then(data => {
+      DATA_RAW = data;
+      DATA_ROTATIONS = data.rotations || {};
+      CONTACT_EMAIL = data.contact?.email || "";
+      CONTACT_WHATSAPP = data.contact?.whatsapp || "";
+      ITEMS = data.items || [];
+      renderFilters();
+      renderGrid();
+    })
+    .catch(err => {
+      grid.innerHTML = `<p style="grid-column:1/-1;text-align:center;color:var(--ink-soft);font-style:italic;">Couldn't load items (${err.message}). If you're opening this file directly, try serving it via <code>python3 -m http.server</code>.</p>`;
+    });
+</script>
+
+</body>
+</html>
