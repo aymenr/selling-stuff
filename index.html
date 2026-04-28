@@ -980,6 +980,7 @@
     setEditMode(true);
   } */
 
+  /* Edit mode disabled — these buttons are commented out in the HTML
   document.getElementById("resetEdits").onclick = () => {
     if (!confirm("Clear all browser-side rotations and text edits? (Anything already saved in data.json will remain.)")) return;
     LOCAL_ROTATIONS = {};
@@ -1032,6 +1033,8 @@
     a.remove();
     URL.revokeObjectURL(url);
   };
+  */
+
   lb.addEventListener("click", (e) => { if (e.target === lb) closeLightbox(); });
   document.addEventListener("keydown", (e) => {
     if (!lb.classList.contains("open")) return;
