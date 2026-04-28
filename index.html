@@ -604,19 +604,17 @@
 </head>
 <body>
 
-<!-- edit mode disabled
 <button class="edit-toggle" id="editToggle" aria-pressed="false">edit</button>
 <div class="edit-panel" id="editPanel">
   <span class="hint">Click ↻ on photos to rotate, or click the title, description, or price to edit. Changes are saved in your browser; use "Download data.json" to make them permanent.</span>
   <button id="saveData">Download data.json</button>
   <button id="resetEdits">Reset all changes</button>
 </div>
--->
 
 <header class="hero">
   <img src="hero.png" alt="Moving Sale" style="width:30%;border-radius:6px;margin-bottom:0;display:block;margin-left:auto;margin-right:auto;">
   <h1>Moving Sale</h1>
-  <p class="lede">We're leaving Germany and a few little things are looking for new homes. You can pick them from Torfstr 22.</p>
+  <p class="lede">We're leaving Germany and a few little things are looking for new homes. You can pick them from <em>Torfstr 22</em>. Give us your best offer.</p>
   <div class="divider"></div>
 </header>
 
@@ -967,8 +965,7 @@
     refreshAllImagesFor(file);
   };
 
-  // Edit mode disabled
-  /* const editToggle = document.getElementById("editToggle");
+  const editToggle = document.getElementById("editToggle");
   function setEditMode(on) {
     document.body.classList.toggle("edit", on);
     editToggle.setAttribute("aria-pressed", on ? "true" : "false");
@@ -978,9 +975,8 @@
   editToggle.onclick = () => setEditMode(!document.body.classList.contains("edit"));
   if (new URLSearchParams(location.search).has("edit") || localStorage.getItem("edit-mode") === "1") {
     setEditMode(true);
-  } */
+  }
 
-  /* Edit mode disabled — these buttons are commented out in the HTML
   document.getElementById("resetEdits").onclick = () => {
     if (!confirm("Clear all browser-side rotations and text edits? (Anything already saved in data.json will remain.)")) return;
     LOCAL_ROTATIONS = {};
@@ -1033,7 +1029,6 @@
     a.remove();
     URL.revokeObjectURL(url);
   };
-  */
 
   lb.addEventListener("click", (e) => { if (e.target === lb) closeLightbox(); });
   document.addEventListener("keydown", (e) => {

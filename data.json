@@ -7,7 +7,7 @@
     {
       "id": "if-you-were",
       "title": "\"If You Were\" party game",
-      "description": "In German. \n\nBrand new — box still in shrink. \n",
+      "description": "In German. \n\nBrand new,  box still in shrink. \n",
       "price": "€10",
       "available": true,
       "category": "Fun",
@@ -18,7 +18,7 @@
     {
       "id": "expandable-shelf",
       "title": "4x White expandable shelf",
-      "description": "Plastic shelf with metal legs, expands to fit different spaces. Brand new.",
+      "description": "Plastic shelf with metal legs, expands to fit different spaces. ",
       "price": "£10",
       "available": true,
       "category": "Home",
@@ -28,8 +28,8 @@
     },
     {
       "id": "electric-hand-mixer",
-      "title": "Alpina ceramic oven dish",
-      "description": "Rectangular ceramic dish (approx 16.5×9.5×4.3 cm, safe to 220°C). Brand new, still with original labels.",
+      "title": "Ceramic oven dish",
+      "description": "Rectangular ceramic dish (approx 16.5×9.5×4.3 cm, safe to 220°C). Brand new.",
       "price": "£5",
       "available": true,
       "category": "Kitchen",
@@ -40,7 +40,7 @@
     {
       "id": "laptop-stand",
       "title": "Aluminium laptop stand",
-      "description": "Single-piece silver stand — lifts your Laptop to eye-level.",
+      "description": "Single-piece silver stand, lifts Laptop to eye-level.",
       "price": "£5",
       "available": true,
       "category": "Electronics",
@@ -51,7 +51,7 @@
     {
       "id": "anker-power-bank",
       "title": "Anker PowerCore 5000 battery bank.",
-      "description": "USB-A output (to charge your device) and one Micro-USB input (to recharge the power bank itself).\n\nVisible wear and scratches on surface.",
+      "description": "USB-A output (to charge your device) and one Micro-USB input (to recharge the power bank itself).",
       "price": "£7",
       "available": true,
       "category": "Electronics",
@@ -62,7 +62,7 @@
     {
       "id": "magic-keyboard",
       "title": "Apple Magic Keyboard  (2nd Generation)",
-      "description": "Model A2450.\n\nAll keys work except for the missing \"Up arrow\" key.\n\nVisible wear and scratches particularly on the backside. .",
+      "description": "Model A2450.\n\nAll keys work except for the missing \"Up arrow\" key.\n\nVisible wear and scratches particularly on the backside. ",
       "price": "£8",
       "available": true,
       "category": "Electronics",
@@ -74,7 +74,7 @@
     {
       "id": "magic-trackpad",
       "title": "Apple Magic Trackpad 2",
-      "description": "Model A1535\n\nGlass surface clean, click & multi-touch all good. \n\nBackside has visible wear and scratches ",
+      "description": "Model A1535\n\nGlass surface clean, click & multi-touch all good.",
       "price": "£40",
       "available": true,
       "category": "Electronics",
@@ -86,27 +86,23 @@
     {
       "id": "bicycle",
       "title": "TRIBAN RC 100 Bicycle",
-      "description": "Road bike aluminium TRIBAN RC 100 Shimano 7-speed grey.\n\nUsed for 2 years.",
-      "price": "€250",
+      "description": "Road bike aluminium TRIBAN RC 100 Shimano 7-speed grey.\n\nComes with kickstand, U-lock, phone mount, and front light.\n\nUsed for 2 years.  Chain, gears and brakes all functional.",
+      "price": "€300",
       "available": true,
       "category": "Home",
-      "images": [],
-      "available_from": "1 June 2026"
-    },
-    {
-      "id": "hand-pump",
-      "title": "Bicycle pump",
-      "description": "",
-      "price": "€10",
-      "available": true,
-      "category": "Home",
-      "images": [],
+      "images": [
+        "B0C27C7D-F7D9-4D93-9190-1EA50E61472A.webp",
+        "0D0FBC4D-D396-4BC6-BD04-EB77CE920BC6.webp",
+        "6A11795C-757C-4AAC-BED4-792AC06559BF.webp",
+        "4A7F1596-E1A0-4D74-A276-78C7BC4002EA.webp",
+        "30E15BB2-54CB-4FEB-B099-4A1F787FA88E.webp"
+      ],
       "available_from": "1 June 2026"
     },
     {
       "id": "black-umbrella",
       "title": "Black umbrella",
-      "description": "Folding umbrella, opens and closes smoothly. Looks new or gently used.",
+      "description": "Folding umbrella, opens and closes smoothly. ",
       "price": "£4",
       "available": true,
       "category": "Home",
@@ -151,7 +147,7 @@
     {
       "id": "compact-camera",
       "title": "Digital Camera 1080P Camera 44MP",
-      "description": "Pocket point-and-shoot.\n\nLight signs of wear.",
+      "description": "Pocket point-and-shoot.",
       "price": "£30",
       "available": true,
       "category": "Electronics",
@@ -210,7 +206,7 @@
     {
       "id": "ikea-gunde-chairs",
       "title": "IKEA folding chairs (set of 3)",
-      "description": "Three white folding chairs — perfect for dinner parties or surprise guests. Fold flat against a wall when you don't need them.\n\nSigns of wear",
+      "description": "Three white folding chairs -  perfect for dinner parties or surprise guests. Fold flat against a wall when you don't need them.",
       "price": "€15",
       "available": true,
       "category": "Home",
@@ -233,7 +229,7 @@
     {
       "id": "volca-keys",
       "title": "KORG Volca Keys",
-      "description": "Analogue synthesizer. \n\nEverything working. Visible wear and scratches on back.\n\n",
+      "description": "Analogue synthesizer. \n\nFully functional.\n",
       "price": "£95",
       "available": true,
       "category": "Music",
@@ -245,7 +241,7 @@
     {
       "id": "volca-sample",
       "title": "KORG Volca Sample",
-      "description": "Sample sequencer\n\nHas signs of wear and use but every pad/knob works.",
+      "description": "Sample sequencer\n\nFully functional.",
       "price": "£95",
       "available": true,
       "category": "Music",
@@ -257,7 +253,7 @@
     {
       "id": "immersion-blender",
       "title": "MasterChef Hand Blender/ immersion blender",
-      "description": "Handheld stick blender. Minor wear but fully functional",
+      "description": "",
       "price": "£5",
       "available": true,
       "category": "Kitchen",
@@ -269,10 +265,12 @@
       "id": "microwave",
       "title": "Cecotec Proclean Microwave",
       "description": "",
-      "price": "",
+      "price": "€30",
       "available": true,
       "category": "Kitchen",
-      "images": [],
+      "images": [
+        "8F17E0E1-6937-4A95-9946-8991986113FE.webp"
+      ],
       "available_from": "1 June 2026"
     },
     {
@@ -299,7 +297,7 @@
     },
     {
       "id": "foot-stool",
-      "title": "Mushroom foot rests",
+      "title": "Mushroom foot rest",
       "description": "",
       "price": "£15",
       "available": true,
@@ -311,7 +309,7 @@
     {
       "id": "switch-console",
       "title": "Nintendo Switch + joycons",
-      "description": "Screen is great and joycons work perfectly.\nJoycons and rear has visible wear and scratches.\n\nNo charger or dock",
+      "description": "Screen is great and joycons work perfectly.\n\nNo charger or dock",
       "price": "£120",
       "available": true,
       "category": "Gaming",
@@ -323,7 +321,7 @@
     {
       "id": "pc",
       "title": "Mini PC (HX99G)",
-      "description": "Minisforum HX 80G. 5800H+6600m+32GB Ram",
+      "description": "Minisforum HX 80G. \n\n5800H+6600m+32GB Ram",
       "price": "€400",
       "available": true,
       "category": "Electronics",
@@ -331,8 +329,8 @@
     },
     {
       "id": "hairdryer",
-      "title": "Philips(STH3020/10) Garment steamer",
-      "description": "Good condition, no visible wear or damage.",
+      "title": "Philips Garment steamer",
+      "description": "(STH3020/10)\n",
       "price": "£25",
       "available": true,
       "category": "Home",
@@ -398,7 +396,7 @@
     {
       "id": "alpina-oven-dish",
       "title": "Storage bins",
-      "description": "Two clear storage bins with handles. New, no visible wear.",
+      "description": "Two clear storage bins with handles.",
       "price": "£2",
       "available": true,
       "category": "Home",
@@ -408,18 +406,21 @@
     },
     {
       "id": "tv",
-      "title": "TCL 55 Inch TV",
-      "description": "",
-      "price": "300",
+      "title": "TCL 55\" 4K UHD Android TV",
+      "description": "55 inch 4K Smart TV.",
+      "price": "€300",
       "available": true,
       "category": "Electronics",
-      "images": [],
+      "images": [
+        "4EF71250-B8AA-4885-9AAF-D7021B6103C5.webp",
+        "3DC3385E-E71B-4A5E-AD72-4A4216907B03.webp"
+      ],
       "available_from": "1 June 2026"
     },
     {
       "id": "vegetable-chopper",
       "title": "Vegetable chopper/slicer",
-      "description": "Multi-function vegetable chopper with interchangeable blades.\n\nMinor wear on plastic body, fully functional.",
+      "description": "Multi-function vegetable chopper with interchangeable blades.",
       "price": "£10",
       "available": true,
       "category": "Kitchen",
@@ -430,7 +431,7 @@
     {
       "id": "xiaomi-vacuum",
       "title": "Xiaomi Robot Vacuum E5",
-      "description": "Comes with original box, charging dock and EU plug. \n\nOccasionally gets stuck when cleaning and have to restart it via app or the vacumn.\n\nSigns of wear. ",
+      "description": "Comes with original box, charging dock and EU plug. \n\nOccasionally gets stuck when cleaning and have to restart it via app or the vacumn.",
       "price": "£35",
       "available": true,
       "category": "Home",
@@ -442,7 +443,7 @@
     {
       "id": "clear-storage-bins",
       "title": " \"Summer Vibes\" lemon framed wall art",
-      "description": "Decorative framed print with lemon/fruit pattern. Still in plastic wrapping — brand new.",
+      "description": "Decorative framed print with lemon/fruit pattern. Still in plastic wrapping. Brand new.",
       "price": "£1",
       "available": true,
       "category": "Fun",
@@ -451,19 +452,59 @@
       ]
     },
     {
-      "id": "airfry er",
+      "id": "iron-stand",
+      "title": "IKEA Ironing board",
+      "description": "Folding ironing board.\n\nCover has a yellowish stain from use.",
+      "price": "€5",
+      "available": true,
+      "category": "Home",
+      "images": [
+        "BE9E7735-2E11-4211-9CE8-9D72E0158BFC.webp"
+      ],
+      "available_from": "1 June 2026"
+    },
+    {
+      "id": "ergonomic-footrest",
+      "title": "Foot rest",
+      "description": "6 Height Adjustable Footrest",
+      "price": "£8",
+      "available": true,
+      "category": "Home",
+      "images": [
+        "5F79040D-6CE6-4F21-87A7-CCB1D1D6E6BB.webp"
+      ]
+    },
+    {
+      "id": "hand-pump",
+      "title": "Bicycle floor pump (BTWIN 500)",
+      "description": "",
+      "price": "€10",
+      "available": true,
+      "category": "Home",
+      "images": [
+        "A32BA41C-1F54-443E-9140-FD8D7DE363F3.webp"
+      ],
+      "available_from": "1 June 2026",
+      "orientation": "portrait"
+    },
+    {
+      "id": "airfryer",
       "title": "Aigostar Hot air fryer",
-      "description": "7 liters",
-      "price": "€40",
+      "description": "7 liter capacity with digital display. ",
+      "price": "€35",
       "available": true,
       "category": "Kitchen",
-      "images": [],
-      "available_from": "1 June 2026"
+      "images": [
+        "8D66B9B4-90C0-47E8-8DF9-1B8340E6B272.webp",
+        "1EF08B0F-5DD7-411A-AE0E-D865D998AAF2.webp"
+      ],
+      "available_from": "1 June 2026",
+      "orientation": "portrait"
     },
     {
       "id": "funko-batman",
       "title": "Batman 1st Appearance - Funko Pop #270 ",
-      "description": "Gently used, may have minor signs of wear, scuffs.",
+      "description": "",
       "price": "€8",
       "available": true,
       "category": "Fun",
@@ -476,7 +517,7 @@
     {
       "id": "black-decker-blender",
       "title": "Black+Decker 500W blender/food processor",
-      "description": "Significant signs of wear and use.",
+      "description": "",
       "price": "£15",
       "available": true,
       "category": "Kitchen",
@@ -490,7 +531,7 @@
     {
       "id": "braiding-sweetgrass",
       "title": "Braiding Sweetgrass — Robin Wall Kimmerer",
-      "description": "Penguin paperback.\n \nLight wear.",
+      "description": "Paperback.",
       "price": "€6",
       "available": true,
       "category": "Books",
@@ -539,7 +580,7 @@
     {
       "id": "how-to-speak-machine",
       "title": "How to Speak Machine — John Maeda",
-      "description": "Paperback.\nBrand new",
+      "description": "Paperback.\n\nBrand new.",
       "price": "€7",
       "available": true,
       "category": "Books",
@@ -551,7 +592,7 @@
     {
       "id": "human-machine-learning",
       "title": "Human Machine Learning — Corinne Schillizzi",
-      "description": "Paperback.\n\nBrand new",
+      "description": "Paperback.\n\nBrand new.",
       "price": "£15",
       "available": true,
       "category": "Books",
@@ -563,7 +604,7 @@
     {
       "id": "humanizing-data-strategy",
       "title": "Humanizing Data Strategy — Tiankai Feng",
-      "description": "Paperback.\n\nBrand new",
+      "description": "Paperback.\n\nBrand new.",
       "price": "£15",
       "available": true,
       "category": "Books",
@@ -575,7 +616,7 @@
     {
       "id": "insight-out",
       "title": "InsightOut — Tina Seelig",
-      "description": "Hardback with dust jacket. \n\nBrand new",
+      "description": "Hardback with dust jacket. \n\nBrand new.",
       "price": "£8",
       "available": true,
       "category": "Books",
@@ -587,7 +628,7 @@
     {
       "id": "lean-analytics",
       "title": "Lean Analytics — Croll & Yoskovitz",
-      "description": "O'Reilly classic, paperback. \n\nBrand new",
+      "description": "O'Reilly classic, paperback. \n\nBrand new.",
       "price": "£15",
       "available": true,
       "category": "Books",
@@ -599,7 +640,7 @@
     {
       "id": "desk-lamp",
       "title": "LED gooseneck desk lamp",
-      "description": "Adjustable desk lamp with flexible gooseneck. Minor scuffs on base, fully functional.",
+      "description": "Adjustable desk lamp with flexible gooseneck. ",
       "price": "£10",
       "available": true,
       "category": "Electronics",
@@ -611,7 +652,7 @@
     {
       "id": "measuring-ux",
       "title": "Measuring the User Experience (3rd ed.)",
-      "description": "Brand new",
+      "description": "Brand new.",
       "price": "£25",
       "available": true,
       "category": "Books",
@@ -623,7 +664,7 @@
     {
       "id": "persona-5-royal",
       "title": "Persona 5 Royal — Switch",
-      "description": "Cartridge & case both excellent condition.",
+      "description": "Cartridge & case.",
       "price": "£25",
       "available": true,
       "category": "Gaming",
@@ -637,7 +678,7 @@
       "id": "ps4-controller",
       "title": "PS4 DualShock 4 Controller (black)",
       "description": "Sticks, buttons & rumble all work. Visible wear on the controller, left joystick rubber torn.",
-      "price": "£15",
+      "price": "£10",
       "available": true,
       "category": "Gaming",
       "images": [
@@ -648,8 +689,8 @@
     },
     {
       "id": "office-chair",
-      "title": "Steelcase Please",
-      "description": "Gently used, some signs of wear.",
+      "title": "Steelcase Please Office Chair",
+      "description": "",
       "price": "£280",
       "available": true,
       "category": "Home",
@@ -661,7 +702,7 @@
     {
       "id": "zealot-speaker",
       "title": "UE Boom 3 portable Bluetooth speaker",
-      "description": "Signs of wear and use.",
+      "description": "",
       "price": "£65",
       "available": true,
       "category": "Electronics",
@@ -684,13 +725,16 @@
     },
     {
       "id": "2-bins",
-      "title": "2 waste baskets",
+      "title": "2 black wire mesh waste bins",
       "description": "",
       "price": "€10",
       "available": true,
       "category": "Home",
-      "images": [],
-      "available_from": "1 June 2026"
+      "images": [
+        "CA20A5AD-3D8C-4EB5-A04B-6D49DD0FF59F.webp"
+      ],
+      "available_from": "1 June 2026",
+      "orientation": "portrait"
     },
     {
       "id": "laundry-basket",
@@ -699,28 +743,37 @@
       "price": "€5",
       "available": true,
       "category": "Home",
-      "images": [],
-      "available_from": "1 June 2026"
+      "images": [
+        "531D888A-8FA4-4D51-AF45-4E976B04D4A5.webp"
+      ],
+      "available_from": "1 June 2026",
+      "orientation": "portrait"
     },
     {
       "id": "monitor",
-      "title": "Dell Monitor",
+      "title": "Dell Monitor 24\" U2422H",
       "description": "",
-      "price": "",
+      "price": "€250",
       "available": true,
       "category": "Electronics",
-      "images": [],
-      "available_from": "1 June 2026"
+      "images": [
+        "0B7FC48D-5836-403C-B4A6-2F8F26BE55FA.webp",
+        "6A63C819-EDD7-4CA4-954C-1BC0F2906B28.webp"
+      ],
+      "available_from": "1 June 2026",
+      "orientation": "portrait"
     },
     {
-      "id": "iron-stand",
-      "title": "RUTER IKEA Ironing stand",
+      "id": "steam-iron",
+      "title": "Electric iron",
       "description": "",
-      "price": "€5",
+      "price": "£8",
       "available": true,
       "category": "Home",
-      "images": [],
-      "available_from": "1 June 2026"
+      "images": [
+        "DF855CF9-D74B-49E3-8E71-BA4A3B088014.webp"
+      ],
+      "orientation": "portrait"
     }
   ],
   "rotations": {
@@ -785,7 +838,6 @@
     "14597BB3-A2A6-4A27-B600-2E6628EC4C8A.webp": 90,
     "C1478633-AA1C-4788-B41B-1859D5B137B0.webp": 90,
     "1EEF92D3-CBAF-4001-8727-4F8BFB9469DF.webp": 90,
-    "65069CBD-ADFC-4DA6-857D-B8A780B0CF56.webp": 180,
     "B07317F1-B4ED-415B-BB9B-FD2F0329CBA5.webp": 90,
     "49FBFB79-2191-42EF-BE79-829ED43DA541.webp": 90,
     "C3E4BDF3-5246-471D-BDD3-EC16D23DD2EC.webp": 90,
@@ -807,6 +859,20 @@
     "CEAFE800-CF87-451C-B435-DDD48ACB6B2E.webp": 90,
     "B2C45DA5-C463-4206-B3A6-89C3CF3413F5.webp": 90,
     "6BD9D1FE-8150-4010-9E2E-14950F68DB7D.webp": 90,
-    "0785A14D-6C7A-4ECD-B17F-433D5CCF7451.webp": 90
+    "0785A14D-6C7A-4ECD-B17F-433D5CCF7451.webp": 90,
+    "14CD71AA-9D23-4B7A-8985-E7A0043A56DA.webp": 90,
+    "A3D79C4F-6B45-4A79-8B3A-DFC3EE0A3F4D.webp": 180,
+    "A32BA41C-1F54-443E-9140-FD8D7DE363F3.webp": 90,
+    "8F17E0E1-6937-4A95-9946-8991986113FE.webp": 90,
+    "8D66B9B4-90C0-47E8-8DF9-1B8340E6B272.webp": 90,
+    "1EF08B0F-5DD7-411A-AE0E-D865D998AAF2.webp": 90,
+    "CA20A5AD-3D8C-4EB5-A04B-6D49DD0FF59F.webp": 90,
+    "531D888A-8FA4-4D51-AF45-4E976B04D4A5.webp": 90,
+    "4A7F1596-E1A0-4D74-A276-78C7BC4002EA.webp": 90,
+    "0B7FC48D-5836-403C-B4A6-2F8F26BE55FA.webp": 90,
+    "DF855CF9-D74B-49E3-8E71-BA4A3B088014.webp": 90,
+    "0D0FBC4D-D396-4BC6-BD04-EB77CE920BC6.webp": 90,
+    "6A11795C-757C-4AAC-BED4-792AC06559BF.webp": 90,
+    "BE9E7735-2E11-4211-9CE8-9D72E0158BFC.webp": 180
   }
 }
