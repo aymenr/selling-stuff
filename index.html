@@ -8,6 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:wght@400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MV1X8S6KBP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MV1X8S6KBP');
+</script>
 <style>
   :root {
     --cream: #faf6ef;
@@ -967,16 +975,19 @@
   const editToggle = document.getElementById("editToggle");
   function setEditMode(on) {
     document.body.classList.toggle("edit", on);
-    editToggle.setAttribute("aria-pressed", on ? "true" : "false");
+    if (editToggle) editToggle.setAttribute("aria-pressed", on ? "true" : "false");
     refreshEditableState();
     if (on) localStorage.setItem("edit-mode", "1"); else localStorage.removeItem("edit-mode");
   }
-  editToggle.onclick = () => setEditMode(!document.body.classList.contains("edit"));
-  if (new URLSearchParams(location.search).has("edit") || localStorage.getItem("edit-mode") === "1") {
-    setEditMode(true);
+  if (editToggle) {
+    editToggle.onclick = () => setEditMode(!document.body.classList.contains("edit"));
+    if (new URLSearchParams(location.search).has("edit") || localStorage.getItem("edit-mode") === "1") {
+      setEditMode(true);
+    }
   }
 
-  document.getElementById("resetEdits").onclick = () => {
+  const resetEditsBtn = document.getElementById("resetEdits");
+  if (resetEditsBtn) resetEditsBtn.onclick = () => {
     if (!confirm("Clear all browser-side rotations and text edits? (Anything already saved in data.json will remain.)")) return;
     LOCAL_ROTATIONS = {};
     LOCAL_EDITS = {};
@@ -999,7 +1010,8 @@
     });
   };
 
-  document.getElementById("saveData").onclick = () => {
+  const saveDataBtn = document.getElementById("saveData");
+  if (saveDataBtn) saveDataBtn.onclick = () => {
     if (!DATA_RAW) return;
     const merged = { ...DATA_ROTATIONS, ...LOCAL_ROTATIONS };
     Object.keys(merged).forEach(k => { if (!merged[k]) delete merged[k]; });
