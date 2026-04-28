@@ -85,26 +85,24 @@
       ]
     },
     {
-      "id": "funko-batman",
-      "title": "Batman 1st Appearance - Funko Pop #270 ",
-      "description": "Gently used, may have minor signs of wear, scuffs.",
-      "price": "€8",
-      "available": true,
-      "category": "Fun",
-      "images": [
-        "642914E7-D354-4701-B864-D4F4A844A2B8.JPG",
-        "B2C45DA5-C463-4206-B3A6-89C3CF3413F5.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
       "id": "bicycle",
-      "title": "Bicycle",
-      "description": "",
-      "price": "",
+      "title": "TRIBAN RC 100 Bicycle",
+      "description": "Road bike aluminium TRIBAN RC 100 Shimano 7-speed grey.\n\nUsed for 2 years.",
+      "price": "€250",
       "available": true,
       "category": "Home",
-      "images": []
+      "images": [],
+      "available_from": "1 June 2026"
+    },
+    {
+      "id": "hand-pump",
+      "title": "Bicycle pump",
+      "description": "",
+      "price": "€10",
+      "available": true,
+      "category": "Home",
+      "images": [],
+      "available_from": "1 June 2026"
     },
     {
       "id": "black-umbrella",
@@ -128,33 +126,6 @@
       "images": [
         "C58E7962-C6A5-4062-BC06-D9A4E5CD7876.JPG"
       ]
-    },
-    {
-      "id": "black-decker-blender",
-      "title": "Black+Decker 500W blender/food processor",
-      "description": "Significant signs of wear and use.",
-      "price": "€15",
-      "available": true,
-      "category": "Kitchen",
-      "images": [
-        "8F3F2D51-9839-44E0-903D-3FDF66930AFB.JPG",
-        "6BD9D1FE-8150-4010-9E2E-14950F68DB7D.JPG",
-        "658F240D-0682-45EA-B926-E4D9A9BBED15.JPG",
-        "69944D87-E935-46F0-A945-0EB74A32B727.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
-      "id": "braiding-sweetgrass",
-      "title": "Braiding Sweetgrass — Robin Wall Kimmerer",
-      "description": "Penguin paperback.\n \nLight wear.",
-      "price": "€6",
-      "available": true,
-      "category": "Books",
-      "images": [
-        "41EE126D-CD96-4473-86E3-ED692446C17C.JPG"
-      ],
-      "orientation": "portrait"
     },
     {
       "id": "bamboo-lid-container",
@@ -191,18 +162,6 @@
       ]
     },
     {
-      "id": "dreo-heater",
-      "title": "Dreo Energy-Saving Fan Heater",
-      "description": "",
-      "price": "€35",
-      "available": true,
-      "category": "Home",
-      "images": [
-        "5D42F06D-1097-450B-893C-F9F4E4CEDF95.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
       "id": "elago-earhooks",
       "title": "Elago AirPods Earhooks",
       "description": "Silicone ear-hooks so your AirPods stay in your ears. Useful during exercise or if they tend to fall out of your ear. \n\nCompletely unused.",
@@ -237,31 +196,6 @@
       ]
     },
     {
-      "id": "experimentation-works",
-      "title": "Experimentation Works — Stefan Thomke",
-      "description": "Brand new",
-      "price": "€15",
-      "available": true,
-      "category": "Books",
-      "images": [
-        "47E30316-A42F-4E05-A236-2086E407958F.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
-      "id": "grip-tips",
-      "title": "Grip tips for Airpods Pro 2",
-      "description": "Useful during exercise or if Airpods tend to fall out of your ear. \n\n3/4 tips that haven't been used. Storage pouch and carabiner.",
-      "price": "€5",
-      "available": true,
-      "category": "Accessories",
-      "images": [
-        "C064A135-FA8F-44D8-BABE-C9082D4376B1.JPG",
-        "0785A14D-6C7A-4ECD-B17F-433D5CCF7451.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
       "id": "pikachu-controller",
       "title": "HORI Nintendo Switch Controller",
       "description": "Third party Gamecube style controller for the switch. Connects via USB cable. \n\nSigns of wear, rubber gone on left analog stick. ",
@@ -274,42 +208,6 @@
       ]
     },
     {
-      "id": "how-to-speak-machine",
-      "title": "How to Speak Machine — John Maeda",
-      "description": "Paperback.\nBrand new",
-      "price": "€7",
-      "available": true,
-      "category": "Books",
-      "images": [
-        "EA33B7EA-66F6-44E9-8998-92F5116B9FC1.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
-      "id": "human-machine-learning",
-      "title": "Human Machine Learning — Corinne Schillizzi",
-      "description": "Paperback.\n\nBrand new",
-      "price": "€15",
-      "available": true,
-      "category": "Books",
-      "images": [
-        "B763B5A3-0BCE-4E4A-A90F-25CB05443DAE.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
-      "id": "humanizing-data-strategy",
-      "title": "Humanizing Data Strategy — Tiankai Feng",
-      "description": "Paperback.\n\nBrand new",
-      "price": "€15",
-      "available": true,
-      "category": "Books",
-      "images": [
-        "E61C12D3-9C09-4A4C-BE7D-3C6F88547426.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
       "id": "ikea-gunde-chairs",
       "title": "IKEA folding chairs (set of 3)",
       "description": "Three white folding chairs — perfect for dinner parties or surprise guests. Fold flat against a wall when you don't need them.\n\nSigns of wear",
@@ -319,18 +217,6 @@
       "images": [
         "D3C85662-BB57-4A05-A1D4-10F5181E109C.JPG"
       ]
-    },
-    {
-      "id": "insight-out",
-      "title": "InsightOut — Tina Seelig",
-      "description": "Hardback with dust jacket. \n\nBrand new",
-      "price": "€8",
-      "available": true,
-      "category": "Books",
-      "images": [
-        "0CC25E3E-4FC3-4A69-A9BF-2556F116F1AF.JPG"
-      ],
-      "orientation": "portrait"
     },
     {
       "id": "green-pocket-device",
@@ -369,30 +255,6 @@
       ]
     },
     {
-      "id": "lean-analytics",
-      "title": "Lean Analytics — Croll & Yoskovitz",
-      "description": "O'Reilly classic, paperback. \n\nBrand new",
-      "price": "€15",
-      "available": true,
-      "category": "Books",
-      "images": [
-        "580FEC40-B084-4473-BC3A-7B9A974EDB1D.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
-      "id": "desk-lamp",
-      "title": "LED gooseneck desk lamp",
-      "description": "Adjustable desk lamp with flexible gooseneck. Minor scuffs on base, fully functional.",
-      "price": "€10",
-      "available": true,
-      "category": "Electronics",
-      "images": [
-        "F4FAF4A4-2596-4697-82B5-34286F569593.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
       "id": "immersion-blender",
       "title": "MasterChef Hand Blender/ immersion blender",
       "description": "Handheld stick blender. Minor wear but fully functional",
@@ -404,25 +266,14 @@
       ]
     },
     {
-      "id": "measuring-ux",
-      "title": "Measuring the User Experience (3rd ed.)",
-      "description": "Brand new",
-      "price": "€25",
-      "available": true,
-      "category": "Books",
-      "images": [
-        "FD6950D1-63F8-4766-8466-3E16CEBEA7DB.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
       "id": "microwave",
-      "title": "Microwave",
+      "title": "Cecotec Proclean Microwave",
       "description": "",
       "price": "",
       "available": true,
       "category": "Kitchen",
-      "images": []
+      "images": [],
+      "available_from": "1 June 2026"
     },
     {
       "id": "mini-food-chopper",
@@ -471,25 +322,12 @@
     },
     {
       "id": "pc",
-      "title": "PC",
-      "description": "",
-      "price": "",
+      "title": "Mini PC (HX99G)",
+      "description": "Minisforum HX 80G. 5800H+6600m+32GB Ram",
+      "price": "€400",
       "available": true,
       "category": "Electronics",
       "images": []
-    },
-    {
-      "id": "persona-5-royal",
-      "title": "Persona 5 Royal — Switch",
-      "description": "Cartridge & case both excellent condition.",
-      "price": "€25",
-      "available": true,
-      "category": "Gaming",
-      "images": [
-        "7E693647-2210-48E9-BD4F-83A895928D3F.JPG",
-        "CC8EDA39-623A-4E05-9A0D-9857B023C048.JPG"
-      ],
-      "orientation": "portrait"
     },
     {
       "id": "hairdryer",
@@ -501,19 +339,6 @@
       "images": [
         "254F0801-4D9B-47DC-8A15-5D9BD3E01065.JPG"
       ]
-    },
-    {
-      "id": "ps4-controller",
-      "title": "PS4 DualShock 4 Controller (black)",
-      "description": "Sticks, buttons & rumble all work. Visible wear on the controller, left joystick rubber torn.",
-      "price": "€15",
-      "available": true,
-      "category": "Gaming",
-      "images": [
-        "0E04E442-41A4-4750-8A5D-CBD54148613C.JPG",
-        "9594BF74-59AF-4921-A09E-CFF855344D04.JPG"
-      ],
-      "orientation": "portrait"
     },
     {
       "id": "ring-fit",
@@ -561,18 +386,6 @@
       ]
     },
     {
-      "id": "office-chair",
-      "title": "Steelcase Please",
-      "description": "Gently used, some signs of wear.",
-      "price": "€280",
-      "available": true,
-      "category": "Home",
-      "images": [
-        "1285B2FB-74A4-4237-9472-7C2EFCA9AE1C.JPG"
-      ],
-      "orientation": "portrait"
-    },
-    {
       "id": "white-plastic-trays",
       "title": "Storage bins",
       "description": "Can be used for categorizing smaller items inside drawers or cabinets.",
@@ -596,24 +409,13 @@
     },
     {
       "id": "tv",
-      "title": "TV",
+      "title": "TCL 55 Inch TV",
       "description": "",
-      "price": "",
+      "price": "300",
       "available": true,
       "category": "Electronics",
-      "images": []
-    },
-    {
-      "id": "zealot-speaker",
-      "title": "UE Boom 3 portable Bluetooth speaker",
-      "description": "Signs of wear and use.",
-      "price": "€65",
-      "available": true,
-      "category": "Electronics",
-      "images": [
-        "IMG_8796.JPG"
-      ],
-      "orientation": "portrait"
+      "images": [],
+      "available_from": "1 June 2026"
     },
     {
       "id": "vegetable-chopper",
@@ -625,18 +427,6 @@
       "images": [
         "CCCEAA1D-1A75-4F9D-ADA5-2025C7F3AB4A.JPG"
       ]
-    },
-    {
-      "id": "shopping-trolley",
-      "title": "Wheeled shopping trolley",
-      "description": "",
-      "price": "€10",
-      "available": true,
-      "category": "Home",
-      "images": [
-        "CEAFE800-CF87-451C-B435-DDD48ACB6B2E.JPG"
-      ],
-      "orientation": "portrait"
     },
     {
       "id": "xiaomi-vacuum",
@@ -662,13 +452,277 @@
       ]
     },
     {
-      "id": "airfryer",
-      "title": "Airfryer",
+      "id": "airfry er",
+      "title": "Aigostar Hot air fryer",
+      "description": "7 liters",
+      "price": "€40",
+      "available": true,
+      "category": "Kitchen",
+      "images": [],
+      "available_from": "1 June 2026"
+    },
+    {
+      "id": "funko-batman",
+      "title": "Batman 1st Appearance - Funko Pop #270 ",
+      "description": "Gently used, may have minor signs of wear, scuffs.",
+      "price": "€8",
+      "available": true,
+      "category": "Fun",
+      "images": [
+        "642914E7-D354-4701-B864-D4F4A844A2B8.JPG",
+        "B2C45DA5-C463-4206-B3A6-89C3CF3413F5.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "black-decker-blender",
+      "title": "Black+Decker 500W blender/food processor",
+      "description": "Significant signs of wear and use.",
+      "price": "€15",
+      "available": true,
+      "category": "Kitchen",
+      "images": [
+        "8F3F2D51-9839-44E0-903D-3FDF66930AFB.JPG",
+        "6BD9D1FE-8150-4010-9E2E-14950F68DB7D.JPG",
+        "658F240D-0682-45EA-B926-E4D9A9BBED15.JPG",
+        "69944D87-E935-46F0-A945-0EB74A32B727.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "braiding-sweetgrass",
+      "title": "Braiding Sweetgrass — Robin Wall Kimmerer",
+      "description": "Penguin paperback.\n \nLight wear.",
+      "price": "€6",
+      "available": true,
+      "category": "Books",
+      "images": [
+        "41EE126D-CD96-4473-86E3-ED692446C17C.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "dreo-heater",
+      "title": "Dreo Energy-Saving Fan Heater",
+      "description": "",
+      "price": "€35",
+      "available": true,
+      "category": "Home",
+      "images": [
+        "5D42F06D-1097-450B-893C-F9F4E4CEDF95.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "experimentation-works",
+      "title": "Experimentation Works — Stefan Thomke",
+      "description": "Brand new",
+      "price": "€15",
+      "available": true,
+      "category": "Books",
+      "images": [
+        "47E30316-A42F-4E05-A236-2086E407958F.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "grip-tips",
+      "title": "Grip tips for Airpods Pro 2",
+      "description": "Useful during exercise or if Airpods tend to fall out of your ear. \n\n3/4 tips that haven't been used. Storage pouch and carabiner.",
+      "price": "€5",
+      "available": true,
+      "category": "Accessories",
+      "images": [
+        "C064A135-FA8F-44D8-BABE-C9082D4376B1.JPG",
+        "0785A14D-6C7A-4ECD-B17F-433D5CCF7451.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "how-to-speak-machine",
+      "title": "How to Speak Machine — John Maeda",
+      "description": "Paperback.\nBrand new",
+      "price": "€7",
+      "available": true,
+      "category": "Books",
+      "images": [
+        "EA33B7EA-66F6-44E9-8998-92F5116B9FC1.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "human-machine-learning",
+      "title": "Human Machine Learning — Corinne Schillizzi",
+      "description": "Paperback.\n\nBrand new",
+      "price": "€15",
+      "available": true,
+      "category": "Books",
+      "images": [
+        "B763B5A3-0BCE-4E4A-A90F-25CB05443DAE.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "humanizing-data-strategy",
+      "title": "Humanizing Data Strategy — Tiankai Feng",
+      "description": "Paperback.\n\nBrand new",
+      "price": "€15",
+      "available": true,
+      "category": "Books",
+      "images": [
+        "E61C12D3-9C09-4A4C-BE7D-3C6F88547426.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "insight-out",
+      "title": "InsightOut — Tina Seelig",
+      "description": "Hardback with dust jacket. \n\nBrand new",
+      "price": "€8",
+      "available": true,
+      "category": "Books",
+      "images": [
+        "0CC25E3E-4FC3-4A69-A9BF-2556F116F1AF.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "lean-analytics",
+      "title": "Lean Analytics — Croll & Yoskovitz",
+      "description": "O'Reilly classic, paperback. \n\nBrand new",
+      "price": "€15",
+      "available": true,
+      "category": "Books",
+      "images": [
+        "580FEC40-B084-4473-BC3A-7B9A974EDB1D.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "desk-lamp",
+      "title": "LED gooseneck desk lamp",
+      "description": "Adjustable desk lamp with flexible gooseneck. Minor scuffs on base, fully functional.",
+      "price": "€10",
+      "available": true,
+      "category": "Electronics",
+      "images": [
+        "F4FAF4A4-2596-4697-82B5-34286F569593.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "measuring-ux",
+      "title": "Measuring the User Experience (3rd ed.)",
+      "description": "Brand new",
+      "price": "€25",
+      "available": true,
+      "category": "Books",
+      "images": [
+        "FD6950D1-63F8-4766-8466-3E16CEBEA7DB.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "persona-5-royal",
+      "title": "Persona 5 Royal — Switch",
+      "description": "Cartridge & case both excellent condition.",
+      "price": "€25",
+      "available": true,
+      "category": "Gaming",
+      "images": [
+        "7E693647-2210-48E9-BD4F-83A895928D3F.JPG",
+        "CC8EDA39-623A-4E05-9A0D-9857B023C048.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "ps4-controller",
+      "title": "PS4 DualShock 4 Controller (black)",
+      "description": "Sticks, buttons & rumble all work. Visible wear on the controller, left joystick rubber torn.",
+      "price": "€15",
+      "available": true,
+      "category": "Gaming",
+      "images": [
+        "0E04E442-41A4-4750-8A5D-CBD54148613C.JPG",
+        "9594BF74-59AF-4921-A09E-CFF855344D04.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "office-chair",
+      "title": "Steelcase Please",
+      "description": "Gently used, some signs of wear.",
+      "price": "€280",
+      "available": true,
+      "category": "Home",
+      "images": [
+        "1285B2FB-74A4-4237-9472-7C2EFCA9AE1C.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "zealot-speaker",
+      "title": "UE Boom 3 portable Bluetooth speaker",
+      "description": "Signs of wear and use.",
+      "price": "€65",
+      "available": true,
+      "category": "Electronics",
+      "images": [
+        "IMG_8796.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "shopping-trolley",
+      "title": "Wheeled shopping trolley",
+      "description": "",
+      "price": "€10",
+      "available": true,
+      "category": "Home",
+      "images": [
+        "CEAFE800-CF87-451C-B435-DDD48ACB6B2E.JPG"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "2-bins",
+      "title": "2 waste baskets",
+      "description": "",
+      "price": "€10",
+      "available": true,
+      "category": "Home",
+      "images": [],
+      "available_from": "1 June 2026"
+    },
+    {
+      "id": "laundry-basket",
+      "title": "Laundry basket",
+      "description": "",
+      "price": "€5",
+      "available": true,
+      "category": "Home",
+      "images": [],
+      "available_from": "1 June 2026"
+    },
+    {
+      "id": "monitor",
+      "title": "Dell Monitor",
       "description": "",
       "price": "",
       "available": true,
-      "category": "Kitchen",
-      "images": []
+      "category": "Electronics",
+      "images": [],
+      "available_from": "1 June 2026"
+    },
+    {
+      "id": "iron-stand",
+      "title": "RUTER IKEA Ironing stand",
+      "description": "",
+      "price": "€5",
+      "available": true,
+      "category": "Home",
+      "images": [],
+      "available_from": "1 June 2026"
     }
   ],
   "rotations": {

@@ -55,7 +55,7 @@
   .hero h1 {
     font-family: 'Lora', serif;
     font-weight: 400;
-    font-size: clamp(40px, 7vw, 64px);
+    font-size: 48px;
     letter-spacing: -0.02em;
     line-height: 1.05;
     margin: 0 0 16px;
@@ -140,6 +140,8 @@
     position: relative;
     transform: rotate(var(--tilt));
     transition: transform .35s ease, box-shadow .35s ease;
+    display: flex;
+    flex-direction: column;
   }
   .card:nth-child(4n+1) { --tilt: -0.7deg; }
   .card:nth-child(4n+2) { --tilt: 0.5deg; }
@@ -282,7 +284,7 @@
   }
   .dot.active { background: #fff; }
 
-  .meta { padding: 14px 4px 0; }
+  .meta { padding: 14px 4px 0; flex: 1; display: flex; flex-direction: column; }
   .title {
     font-family: 'Lora', serif;
     font-weight: 400;
@@ -290,6 +292,18 @@
     line-height: 1.25;
     letter-spacing: -0.01em;
     margin: 0 0 4px;
+  }
+  .available-from-pill {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #f5ebe0;
+    color: var(--terracotta);
+    margin-bottom: 4px;
+    margin-top: 4px;
   }
   .desc {
     font-size: 14px;
@@ -303,7 +317,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    margin-bottom: 14px;
+    margin-top: auto;
+    margin-bottom: 8px;
   }
   .whatsapp-icon {
     width: 20px;
@@ -599,7 +614,7 @@
 <header class="hero">
   <img src="hero.png" alt="Moving Sale" style="width:30%;border-radius:6px;margin-bottom:0;display:block;margin-left:auto;margin-right:auto;">
   <h1>Moving Sale</h1>
-  <p class="lede">We're leaving Germany and a few little things are looking for new homes. You can pick them from Torfstr 22</p>
+  <p class="lede">We're leaving Germany and a few little things are looking for new homes. You can pick them from Torfstr 22.</p>
   <div class="divider"></div>
 </header>
 
@@ -733,7 +748,8 @@
     if (!item.images.length) {
       const notice = document.createElement("div");
       notice.className = "photo-notice";
-      notice.innerHTML = '<span class="photo-notice-icon">📷</span><span class="photo-notice-text">Photos coming soon<br><small>Available after 1 June 2026</small></span>';
+      const dateHtml = item.available_from ? `<br><small>Available after ${item.available_from}</small>` : "";
+      notice.innerHTML = `<span class="photo-notice-icon">📷</span><span class="photo-notice-text">Photos coming soon${dateHtml}</span>`;
       wrap.innerHTML = "";
       wrap.style.display = "flex";
       wrap.appendChild(notice);
@@ -844,13 +860,13 @@
     meta.className = "meta";
     meta.innerHTML = `
       <h2 class="title" data-field="title">${escapeHtml(eff.title)}</h2>
+      ${item.available_from ? `<span class="available-from-pill">Available after ${item.available_from}</span>` : ""}
       <p class="desc" data-field="description">${escapeHtml(eff.description)}</p>
       <div class="price-row">
         <span class="price" data-field="price">${escapeHtml(eff.price)}</span>
-        ${item.images.length > 1 ? `<span class="photo-count">${item.images.length} photos</span>` : ""}
       </div>
       <div class="actions">
-        <a class="btn primary whatsapp-link" href="${makeWhatsApp(eff)}" target="_blank" rel="noopener"><img src="whatsapp.png" alt="" class="whatsapp-icon"> WhatsApp</a>
+        <a class="btn primary whatsapp-link" href="${makeWhatsApp(eff)}" target="_blank" rel="noopener"><img src="whatsapp.svg" alt="" class="whatsapp-icon"> WhatsApp</a>
       </div>
     `;
 
