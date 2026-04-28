@@ -319,15 +319,6 @@
       ]
     },
     {
-      "id": "pc",
-      "title": "Mini PC (HX99G)",
-      "description": "Minisforum HX 80G. \n\n5800H+6600m+32GB Ram",
-      "price": "€400",
-      "available": true,
-      "category": "Electronics",
-      "images": []
-    },
-    {
       "id": "hairdryer",
       "title": "Philips Garment steamer",
       "description": "(STH3020/10)\n",
