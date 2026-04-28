@@ -1,0 +1,7 @@
+.git
+.DS_Store
+*.sh
+wrangler.jsonc
+.assetsignore
+archive/
+untitled folder/
