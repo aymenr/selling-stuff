@@ -19,7 +19,7 @@
       "id": "expandable-shelf",
       "title": "4x White expandable shelf",
       "description": "Plastic shelf with metal legs, expands to fit different spaces. ",
-      "price": "£10",
+      "price": "€10",
       "available": true,
       "category": "Home",
       "images": [
@@ -30,7 +30,7 @@
       "id": "electric-hand-mixer",
       "title": "Ceramic oven dish",
       "description": "Rectangular ceramic dish (approx 16.5×9.5×4.3 cm, safe to 220°C). Brand new.",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -41,7 +41,7 @@
       "id": "laptop-stand",
       "title": "Aluminium laptop stand",
       "description": "Single-piece silver stand, lifts Laptop to eye-level.",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Electronics",
       "images": [
@@ -52,7 +52,7 @@
       "id": "anker-power-bank",
       "title": "Anker PowerCore 5000 battery bank.",
       "description": "USB-A output (to charge your device) and one Micro-USB input (to recharge the power bank itself).",
-      "price": "£7",
+      "price": "€7",
       "available": true,
       "category": "Electronics",
       "images": [
@@ -63,7 +63,7 @@
       "id": "magic-keyboard",
       "title": "Apple Magic Keyboard  (2nd Generation)",
       "description": "Model A2450.\n\nAll keys work except for the missing \"Up arrow\" key.\n\nVisible wear and scratches particularly on the backside. ",
-      "price": "£8",
+      "price": "€8",
       "available": true,
       "category": "Electronics",
       "images": [
@@ -75,7 +75,7 @@
       "id": "magic-trackpad",
       "title": "Apple Magic Trackpad 2",
       "description": "Model A1535\n\nGlass surface clean, click & multi-touch all good.",
-      "price": "£40",
+      "price": "€40",
       "available": true,
       "category": "Electronics",
       "images": [
@@ -103,7 +103,7 @@
       "id": "black-umbrella",
       "title": "Black umbrella",
       "description": "Folding umbrella, opens and closes smoothly. ",
-      "price": "£4",
+      "price": "€4",
       "available": true,
       "category": "Home",
       "images": [
@@ -115,7 +115,7 @@
       "id": "wire-basket",
       "title": "Black wire basket",
       "description": "",
-      "price": "£2",
+      "price": "€2",
       "available": true,
       "category": "Home",
       "images": [
@@ -126,7 +126,7 @@
       "id": "bamboo-lid-container",
       "title": "Cable management box",
       "description": "",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Home",
       "images": [
@@ -148,7 +148,7 @@
       "id": "compact-camera",
       "title": "Digital Camera 1080P Camera 44MP",
       "description": "Pocket point-and-shoot.",
-      "price": "£30",
+      "price": "€30",
       "available": true,
       "category": "Electronics",
       "images": [
@@ -160,7 +160,7 @@
       "id": "elago-earhooks",
       "title": "Elago AirPods Earhooks",
       "description": "Silicone ear-hooks so your AirPods stay in your ears. Useful during exercise or if they tend to fall out of your ear. \n\nCompletely unused.",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Accessories",
       "images": [
@@ -172,7 +172,7 @@
       "id": "insect-racquet",
       "title": "Electric bug zapper",
       "description": "",
-      "price": "£15",
+      "price": "€15",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -183,7 +183,7 @@
       "id": "summer-vibes-wall-art",
       "title": "Electric hand mixer",
       "description": "",
-      "price": "£10",
+      "price": "€10",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -195,7 +195,7 @@
       "id": "pikachu-controller",
       "title": "HORI Nintendo Switch Controller",
       "description": "Third party Gamecube style controller for the switch. Connects via USB cable. \n\nSigns of wear, rubber gone on left analog stick. ",
-      "price": "£8",
+      "price": "€8",
       "available": true,
       "category": "Gaming",
       "images": [
@@ -218,7 +218,7 @@
       "id": "green-pocket-device",
       "title": "IQOS ILUMA ONE.",
       "description": "Used for a day.",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Electronics",
       "images": [
@@ -230,7 +230,7 @@
       "id": "volca-keys",
       "title": "KORG Volca Keys",
       "description": "Analogue synthesizer. \n\nFully functional.\n",
-      "price": "£95",
+      "price": "€95",
       "available": true,
       "category": "Music",
       "images": [
@@ -242,7 +242,7 @@
       "id": "volca-sample",
       "title": "KORG Volca Sample",
       "description": "Sample sequencer\n\nFully functional.",
-      "price": "£95",
+      "price": "€95",
       "available": true,
       "category": "Music",
       "images": [
@@ -254,7 +254,7 @@
       "id": "immersion-blender",
       "title": "MasterChef Hand Blender/ immersion blender",
       "description": "",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -277,7 +277,7 @@
       "id": "mini-food-chopper",
       "title": "Mini food chopper blade + container",
       "description": "Small food processor blade assembly with clear container. ",
-      "price": "£2",
+      "price": "€2",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -288,7 +288,7 @@
       "id": "baking-pans",
       "title": "Modular drawer organizers.",
       "description": "",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -299,7 +299,7 @@
       "id": "foot-stool",
       "title": "Mushroom foot rest",
       "description": "",
-      "price": "£15",
+      "price": "€15",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -310,7 +310,7 @@
       "id": "switch-console",
       "title": "Nintendo Switch + joycons",
       "description": "Screen is great and joycons work perfectly.\n\nNo charger or dock",
-      "price": "£120",
+      "price": "€120",
       "available": true,
       "category": "Gaming",
       "images": [
@@ -322,7 +322,7 @@
       "id": "hairdryer",
       "title": "Philips Garment steamer",
       "description": "(STH3020/10)\n",
-      "price": "£25",
+      "price": "€25",
       "available": true,
       "category": "Home",
       "images": [
@@ -333,7 +333,7 @@
       "id": "ring-fit",
       "title": "Ring fit adventure— Switch",
       "description": "Cartridge but no accessories or case.",
-      "price": "5£",
+      "price": "5€",
       "available": true,
       "category": "Gaming",
       "images": [
@@ -344,7 +344,7 @@
       "id": "cooking-pot-glass-lid",
       "title": "Stainless steel cooking pot with glass lid",
       "description": "Larger cooking pot with glass lid. ",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -355,7 +355,7 @@
       "id": "cooking-pot-glass-lid",
       "title": "Stainless steel cooking pot with glass lid",
       "description": "Larger cooking pot with glass lid. ",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -366,7 +366,7 @@
       "id": "saucepan-glass-lid",
       "title": "Stainless steel saucepan with glass lid",
       "description": "Clean stainless steel saucepan with glass lid and black handle. ",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -377,7 +377,7 @@
       "id": "white-plastic-trays",
       "title": "Storage bins",
       "description": "Can be used for categorizing smaller items inside drawers or cabinets.",
-      "price": "£2",
+      "price": "€2",
       "available": true,
       "category": "Home",
       "images": [
@@ -388,7 +388,7 @@
       "id": "alpina-oven-dish",
       "title": "Storage bins",
       "description": "Two clear storage bins with handles.",
-      "price": "£2",
+      "price": "€2",
       "available": true,
       "category": "Home",
       "images": [
@@ -412,7 +412,7 @@
       "id": "vegetable-chopper",
       "title": "Vegetable chopper/slicer",
       "description": "Multi-function vegetable chopper with interchangeable blades.",
-      "price": "£10",
+      "price": "€10",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -423,7 +423,7 @@
       "id": "xiaomi-vacuum",
       "title": "Xiaomi Robot Vacuum E5",
       "description": "Comes with original box, charging dock and EU plug. \n\nOccasionally gets stuck when cleaning and have to restart it via app or the vacumn.",
-      "price": "£35",
+      "price": "€35",
       "available": true,
       "category": "Home",
       "images": [
@@ -435,7 +435,7 @@
       "id": "clear-storage-bins",
       "title": " \"Summer Vibes\" lemon framed wall art",
       "description": "Decorative framed print with lemon/fruit pattern. Still in plastic wrapping. Brand new.",
-      "price": "£1",
+      "price": "€1",
       "available": true,
       "category": "Fun",
       "images": [
@@ -458,7 +458,7 @@
       "id": "ergonomic-footrest",
       "title": "Foot rest",
       "description": "6 Height Adjustable Footrest",
-      "price": "£8",
+      "price": "€8",
       "available": true,
       "category": "Home",
       "images": [
@@ -509,7 +509,7 @@
       "id": "black-decker-blender",
       "title": "Black+Decker 500W blender/food processor",
       "description": "",
-      "price": "£15",
+      "price": "€15",
       "available": true,
       "category": "Kitchen",
       "images": [
@@ -535,7 +535,7 @@
       "id": "dreo-heater",
       "title": "Dreo Energy-Saving Fan Heater",
       "description": "",
-      "price": "£35",
+      "price": "€35",
       "available": true,
       "category": "Home",
       "images": [
@@ -547,7 +547,7 @@
       "id": "experimentation-works",
       "title": "Experimentation Works — Stefan Thomke",
       "description": "Brand new",
-      "price": "£15",
+      "price": "€15",
       "available": true,
       "category": "Books",
       "images": [
@@ -559,7 +559,7 @@
       "id": "grip-tips",
       "title": "Grip tips for Airpods Pro 2",
       "description": "Useful during exercise or if Airpods tend to fall out of your ear. \n\n3/4 tips that haven't been used. Storage pouch and carabiner.",
-      "price": "£5",
+      "price": "€5",
       "available": true,
       "category": "Accessories",
       "images": [
@@ -584,7 +584,7 @@
       "id": "human-machine-learning",
       "title": "Human Machine Learning — Corinne Schillizzi",
       "description": "Paperback.\n\nBrand new.",
-      "price": "£15",
+      "price": "€15",
       "available": true,
       "category": "Books",
       "images": [
@@ -596,7 +596,7 @@
       "id": "humanizing-data-strategy",
       "title": "Humanizing Data Strategy — Tiankai Feng",
       "description": "Paperback.\n\nBrand new.",
-      "price": "£15",
+      "price": "€15",
       "available": true,
       "category": "Books",
       "images": [
@@ -608,7 +608,7 @@
       "id": "insight-out",
       "title": "InsightOut — Tina Seelig",
       "description": "Hardback with dust jacket. \n\nBrand new.",
-      "price": "£8",
+      "price": "€8",
       "available": true,
       "category": "Books",
       "images": [
@@ -620,7 +620,7 @@
       "id": "lean-analytics",
       "title": "Lean Analytics — Croll & Yoskovitz",
       "description": "O'Reilly classic, paperback. \n\nBrand new.",
-      "price": "£15",
+      "price": "€15",
       "available": true,
       "category": "Books",
       "images": [
@@ -632,7 +632,7 @@
       "id": "desk-lamp",
       "title": "LED gooseneck desk lamp",
       "description": "Adjustable desk lamp with flexible gooseneck. ",
-      "price": "£10",
+      "price": "€10",
       "available": true,
       "category": "Electronics",
       "images": [
@@ -644,7 +644,7 @@
       "id": "measuring-ux",
       "title": "Measuring the User Experience (3rd ed.)",
       "description": "Brand new.",
-      "price": "£25",
+      "price": "€25",
       "available": true,
       "category": "Books",
       "images": [
@@ -656,7 +656,7 @@
       "id": "persona-5-royal",
       "title": "Persona 5 Royal — Switch",
       "description": "Cartridge & case.",
-      "price": "£25",
+      "price": "€25",
       "available": true,
       "category": "Gaming",
       "images": [
@@ -669,7 +669,7 @@
       "id": "ps4-controller",
       "title": "PS4 DualShock 4 Controller (black)",
       "description": "Sticks, buttons & rumble all work. Visible wear on the controller, left joystick rubber torn.",
-      "price": "£10",
+      "price": "€10",
       "available": true,
       "category": "Gaming",
       "images": [
@@ -682,7 +682,7 @@
       "id": "office-chair",
       "title": "Steelcase Please Office Chair",
       "description": "",
-      "price": "£280",
+      "price": "€280",
       "available": true,
       "category": "Home",
       "images": [
@@ -694,7 +694,7 @@
       "id": "zealot-speaker",
       "title": "UE Boom 3 portable Bluetooth speaker",
       "description": "",
-      "price": "£65",
+      "price": "€65",
       "available": true,
       "category": "Electronics",
       "images": [
@@ -706,7 +706,7 @@
       "id": "shopping-trolley",
       "title": "Wheeled shopping trolley",
       "description": "",
-      "price": "£10",
+      "price": "€10",
       "available": true,
       "category": "Home",
       "images": [
@@ -758,7 +758,7 @@
       "id": "steam-iron",
       "title": "Electric iron",
       "description": "",
-      "price": "£8",
+      "price": "€8",
       "available": true,
       "category": "Home",
       "images": [
