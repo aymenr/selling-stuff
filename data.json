@@ -765,6 +765,18 @@
         "DF855CF9-D74B-49E3-8E71-BA4A3B088014.webp"
       ],
       "orientation": "portrait"
+    },
+    {
+      "id": "focusrite-audio-interface",
+      "title": "Focusrite Scarlett 2i2 (3rd gen) Audio Interface",
+      "description": "Used once or twice, almost new like condition",
+      "price": "€90",
+      "available": true,
+      "category": "Music",
+      "images": [
+        "5D8262A8-D6FA-4063-981A-006E597FB950.webp",
+        "9AF049B1-FF6E-4CE7-9D65-713C57FED379.webp"
+      ]
     }
   ],
   "rotations": {
