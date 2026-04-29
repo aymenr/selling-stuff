@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Second-Hand-Friends/kleinanzeigen-bot/main/schemas/ad.schema.json
+active: false
+title: "Apple Magic Trackpad 2"
+description: "Model A1535\n\nGlass surface clean, click & multi-touch all good."
+category: "Elektronik > PC-Zubehör & Software > Tastatur & Maus"
+price: 40
+price_type: NEGOTIABLE
+shipping_type: PICKUP
+images:
+  - "../images/1CEB6B35-1D1A-4E38-BFD7-E08346D83CAD.jpg"
+  - "../images/326872CA-3FFB-4DC9-90E9-0A8E8C2BC84C.jpg"

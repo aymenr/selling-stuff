@@ -162,7 +162,7 @@
     }
   }
 
-  .card.sold { opacity: .82; }
+  .card.sold { opacity: .4; }
   .card.sold .photo-wrap::after {
     content: "sold";
     position: absolute;
@@ -713,7 +713,8 @@
     const filtered = activeFilter
       ? ITEMS.filter(i => (i.category || "Other") === activeFilter)
       : ITEMS;
-    filtered.forEach(item => grid.appendChild(renderCard(item)));
+    const sorted = [...filtered].sort((a, b) => (a.available === b.available) ? 0 : a.available ? -1 : 1);
+    sorted.forEach(item => grid.appendChild(renderCard(item)));
   }
 
   function imgPath(file) { return "images/" + file; }
