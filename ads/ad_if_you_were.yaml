@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Second-Hand-Friends/kleinanzeigen-bot/main/schemas/ad.schema.json
+active: true
+title: "\"If You Were\" party game (German)"
+description: "\"If You Were\" party game in German.\n\nBrand new, box still in shrink wrap."
+category: "Spielzeug"
+price: 10
+price_type: NEGOTIABLE
+shipping_type: PICKUP
+images:
+  - "../images/E65FDC38-4F3D-4A42-9B75-A69C26ADAC11.jpg"

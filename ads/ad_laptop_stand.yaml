@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Second-Hand-Friends/kleinanzeigen-bot/main/schemas/ad.schema.json
+active: true
+title: "Aluminium laptop stand"
+description: "Single-piece silver aluminium laptop stand. Lifts laptop to eye-level."
+category: "Elektronik > Notebooks"
+price: 5
+price_type: NEGOTIABLE
+shipping_type: PICKUP
+images:
+  - "../images/569CCDA5-0368-4748-AA1C-21A1ACEB41E1.jpg"
