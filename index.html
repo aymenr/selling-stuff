@@ -602,6 +602,24 @@
   .ori-toggle:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
   .ori-toggle.active { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
 
+  .avail-toggle {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(255,250,242,.92);
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    cursor: pointer;
+    display: none;
+    margin-top: 6px;
+  }
+  body.edit .avail-toggle { display: inline-flex; }
+  .avail-toggle:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .avail-toggle.sold { background: var(--sold); color: #fff; border-color: var(--sold); }
+  .card.sold .avail-toggle { pointer-events: auto; opacity: 1; }
+  body.edit .card.sold { opacity: .65; }
+
   @media (max-width: 520px) {
     .grid { gap: 22px 16px; }
     .hero { padding: 40px 20px 24px; }
@@ -612,12 +630,12 @@
 </head>
 <body>
 
-<!-- <button class="edit-toggle" id="editToggle" aria-pressed="false">edit</button>
+<button class="edit-toggle" id="editToggle" aria-pressed="false">edit</button>
 <div class="edit-panel" id="editPanel">
   <span class="hint">Click ↻ on photos to rotate, or click the title, description, or price to edit. Changes are saved in your browser; use "Download data.json" to make them permanent.</span>
   <button id="saveData">Download data.json</button>
   <button id="resetEdits">Reset all changes</button>
-</div> -->
+</div>
 
 <header class="hero">
   <img src="hero.png" alt="Moving Sale" style="width:30%;border-radius:6px;margin-bottom:0;display:block;margin-left:auto;margin-right:auto;">
@@ -658,7 +676,7 @@
   let LOCAL_EDITS = {};
   try { LOCAL_EDITS = JSON.parse(localStorage.getItem(EDITS_KEY) || "{}"); } catch (e) { LOCAL_EDITS = {}; }
 
-  const EDITABLE_FIELDS = ["title", "description", "price", "orientation"];
+  const EDITABLE_FIELDS = ["title", "description", "price", "orientation", "available"];
 
   function effectiveItem(item) {
     const e = LOCAL_EDITS[item.id];
@@ -749,7 +767,7 @@
   function renderCard(item) {
     const eff = effectiveItem(item);
     const card = document.createElement("article");
-    card.className = "card" + (item.available ? "" : " sold");
+    card.className = "card" + (eff.available ? "" : " sold");
     card.dataset.itemId = item.id;
 
     const wrap = document.createElement("div");
@@ -877,7 +895,19 @@
       <div class="actions">
         <a class="btn primary whatsapp-link" href="${makeWhatsApp(eff)}" target="_blank" rel="noopener"><img src="whatsapp.svg" alt="" class="whatsapp-icon"> WhatsApp</a>
       </div>
+      <button class="avail-toggle${eff.available ? "" : " sold"}" type="button">${eff.available ? "Mark as sold" : "Mark as available"}</button>
     `;
+
+    const availBtn = meta.querySelector(".avail-toggle");
+    availBtn.onclick = (e) => {
+      e.stopPropagation();
+      const cur = effectiveItem(item).available !== false;
+      const next = !cur;
+      setEdit(item.id, "available", next);
+      card.classList.toggle("sold", !next);
+      availBtn.classList.toggle("sold", !next);
+      availBtn.textContent = next ? "Mark as sold" : "Mark as available";
+    };
 
     meta.querySelectorAll("[data-field]").forEach(el => {
       const field = el.dataset.field;
